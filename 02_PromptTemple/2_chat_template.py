@@ -1,3 +1,4 @@
+# 对话模板应用
 from  langchain.prompts import ChatPromptTemplate
 chat_template = ChatPromptTemplate.from_messages([
     ("system", "你是一名起名大师，你的名字叫{name}。"),
