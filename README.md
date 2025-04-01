@@ -19,6 +19,9 @@ LangChain 是一个用于构建与大语言模型（LLMs）相关应用程序的
 2.5. [自定义模板](#自定义模板)
 2.6. [Few-Shot](#Few——Shot)
 2.7. [Few-Shot](#Few——Shot)
+2.8. [Few-Shot](#Few——Shot)
+2.9. [Few-Shot](#Few——Shot)
+2.7. [Partial格式化](#Partial格式化)
 
 ### 第三部分：规范化输出OutputParsers的关键技术
 8. [工具与代理](#第八章-工具与代理)
