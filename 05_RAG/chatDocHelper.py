@@ -1,5 +1,4 @@
 import os
-from re import search
 from langchain_community.document_loaders import Docx2txtLoader
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.document_loaders import UnstructuredExcelLoader
@@ -11,9 +10,8 @@ from langchain_openai import ChatOpenAI
 from langchain.retrievers.multi_query import MultiQueryRetriever
 from langchain.retrievers import ContextualCompressionRetriever
 from langchain.retrievers.document_compressors.chain_extract import LLMChainExtractor
-
+from langchain_chroma import Chroma
 from dotenv import load_dotenv
-from pydantic import conset
 
 load_dotenv()
 
@@ -89,7 +87,7 @@ class ChatDocHelper:
     
     # 向量化存储
     def embeddingAndVectorStore(self):
-        db = Chroma.from_documents(
+        db = Chroma.from_documents( #type: ignore
             self.splitText, 
             embedding=embeddings_model  #type: ignore
         )
