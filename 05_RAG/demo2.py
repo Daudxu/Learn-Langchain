@@ -16,6 +16,7 @@ embeddings = OpenAIEmbeddings(
     base_url=base_url,
 )
 
+
 # Sample Chinese texts to embed and store
 texts = [
     "床前明月光，疑是地上霜。",
