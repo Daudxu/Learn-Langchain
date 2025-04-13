@@ -52,3 +52,4 @@ for query in queries:
     response = qa_chain.run(query)
     print(f"用户问题: {query}")
     print(f"智能客服回答: {response}\n")
+
