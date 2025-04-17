@@ -3,4 +3,5 @@ openai==1.70.0
 docx2txt==0.8
 python-dotenv=1.0.1
 pypdf=5.4.0
-# pip install -r requirements.txt
+requests==2.31.0
+# pip install -r requirements.txg
