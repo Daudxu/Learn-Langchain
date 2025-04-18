@@ -70,3 +70,8 @@ if __name__ == "__main__":
     chatUI = gr.ChatInterface(fn=modelResponse , title="Harry Potter Story Q&A")
     # 启动聊天界面
     chatUI.launch()
+
+
+# {
+# "model": "llama2"
+# }
