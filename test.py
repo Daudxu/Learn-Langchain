@@ -11,6 +11,7 @@ def get_embedding_provider():
         if not base_url or not model:
             raise ValueError("Error in sub-node ‘Embeddings Ollama’")
     return provider
+    
 
 def get_ollama_base_url():
     # 优先用环境变量
