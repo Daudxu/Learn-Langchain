@@ -8,7 +8,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from dotenv import load_dotenv
 import operator
-
+import uvicorn
 # Load environment variables
 load_dotenv()
 
@@ -135,6 +135,6 @@ async def clear_session(session_id: str):
         return {"message": f"Session {session_id} cleared"}
     raise HTTPException(status_code=404, detail="Session not found")
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(fastapi_app, host="0.0.0.0", port=8000) 
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run(fastapi_app, host="0.0.0.0", port=8000) 
