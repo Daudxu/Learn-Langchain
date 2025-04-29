@@ -5,6 +5,8 @@ from langchain_community.document_loaders.recursive_url_loader import RecursiveU
 from langchain_openai import ChatOpenAI
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
+from typing import ClassVar
+
 import os
 
 load_dotenv()
@@ -14,7 +16,7 @@ DS_API_KEY = os.getenv("DS_API_KEY")
 MODEL_API_KEY = os.getenv("MODEL_API_KEY")
 MODEL_NAME = os.getenv("MODEL_NAME")
 
-llm = ChatDeepSeek(
+llm2 = ChatDeepSeek(
     api_key=DS_API_KEY,
     base_url="https://api.deepseek.com",
     model="deepseek-chat",
@@ -22,7 +24,7 @@ llm = ChatDeepSeek(
     max_tokens=1000,
 )
 
-llm2 = ChatOpenAI(
+llm = ChatOpenAI(
     api_key=MODEL_API_KEY,
     base_url=BASE_URL,
     model=MODEL_NAME,
@@ -62,18 +64,14 @@ code_gen_prompt = ChatPromptTemplate.from_messages([
     ("placeholder", "{message}"),
 ])
 
-from typing import ClassVar
+
 
 class code(BaseModel):
     profile: str = Field(description="问题和解决方案的描述")
     imports: str = Field(description="代码块导入语句")
     code: str = Field(description="不包括导入语句的代码块")
 
-
-
-
-
-code_gen_chain_oai = code_gen_prompt | llm.with_structured_output(code)
+code_gen_chain_oai = code_gen_prompt | llm.with_structured_output(code )
 
 question = "如何使用LangChain表达式语言（LCEL）来创建一个简单的聊天机器人？"
 solution = code_gen_chain_oai.invoke({
