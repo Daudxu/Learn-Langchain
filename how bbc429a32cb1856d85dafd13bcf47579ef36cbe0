@@ -1,0 +1,88 @@
+[33m4aadf06[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge branch 'master' of https://github.com/Daudxu/Learn-Langchain
+[33m597ca66[m tx
+[33mbbc429a[m tx
+[33me893a22[m fix update ai agent  memory
+[33m2d117b9[m fix update google ADK agent
+[33mc3ead07[m fix update add google adk
+[33m0e30a75[m fix update  code helper script
+[33m6a98d0c[m fix update code helper
+[33m8aac790[m fix update
+[33m168c2ad[m Update README.md
+[33m559812c[m fix  update
+[33mf2283d2[m Update README.md
+[33med88f5e[m Update README.md
+[33m9a2a630[m Update README.md
+[33m06ca28e[m fix update check code demo
+[33me747f6d[m fix update  check code
+[33mce53afe[m fix update chat code
+[33m8edf229[m fix update langchain chat
+[33m00ce664[m fix update demo
+[33mc3832d6[m fix update agnet demo
+[33m1d424a4[m fix update LCEL DEMO
+[33mf949df3[m fix update
+[33m5ac125a[m Update README.md
+[33mfccf8cc[m fix update chatbot
+[33m30d091f[m Update test.py
+[33m7301ab5[m fix update
+[33mab64af1[m FIX UPDATE
+[33m78307d3[m fix update
+[33m2335fca[m fix update add model llama2
+[33m347d727[m fix update add rag agent demo
+[33m04c82b4[m fix update readme
+[33ma93990d[m fix update
+[33mc5fff68[m fix update
+[33m6457b61[m fix update
+[33m517606f[m fix update
+[33m2ac5eb5[m fix update game server RAG
+[33m1a0821f[m fix update
+[33mc9cf849[m fix add demo
+[33mf602033[m fix update
+[33mf67ebd7[m fix update code
+[33m76d2970[m fix Chroma
+[33mc882a1e[m fix update RAG
+[33mc032611[m fix update
+[33m89911ca[m fix update
+[33m8117ecd[m fix update
+[33mbeae833[m fix update
+[33mf17b69b[m fix update
+[33m5861ac0[m fix FewShot
+[33m2fed0e0[m Create NPC.PY
+[33m7cab9c8[m Update README.md
+[33m242979b[m fix update
+[33m72f3aa5[m fix update
+[33m7775d14[m fix update
+[33m83beed6[m Merge branch 'master' of https://github.com/Daudxu/Learn-Langchain
+[33m4cc1622[m fix update readme
+[33mc316c43[m Update README.md
+[33mb15a38f[m Update README.md
+[33mca85cbe[m fix update demo
+[33m1d06886[m fix update
+[33mb8fd2f2[m Update README.md
+[33ma8abfc8[m Update README.md
+[33mf5884ba[m Update README.md
+[33m0cb1f30[m Update README.md
+[33m9fb99e0[m Update README.md
+[33m42745ac[m Update README.md
+[33m0428cc1[m Update README.md
+[33mcdde743[m Update README.md
+[33ma91417a[m Update README.md
+[33m6437f28[m fix update readme
+[33mec06b1d[m Update README.md
+[33m5756487[m Update README.md
+[33m2f31cb5[m Update README.md
+[33m007a026[m Update README.md
+[33me00e2ca[m Update README.md
+[33ma4e468f[m Update README.md
+[33me52849a[m Update README.md
+[33m947dbfe[m Update README.md
+[33m22689d0[m Update README.md
+[33m1b022e6[m Update README.md
+[33m851a7b4[m Update README.md
+[33mc1d0f8a[m fix update code
+[33mc67d0f3[m Update README.md
+[33m60a790d[m fix update demo
+[33m730cc83[m fix update code
+[33mf2fde44[m fix update code
+[33md89e21c[m fix update add .conda in gitignore
+[33md279e5f[m fix update hello langchain
+[33mf08df21[m Initial commit
