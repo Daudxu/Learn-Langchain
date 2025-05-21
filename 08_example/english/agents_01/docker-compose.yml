@@ -1,0 +1,41 @@
+services:
+  app:
+    build: .
+    container_name: xiaolang_app
+    restart: always
+    depends_on:
+      - redis
+    env_file:
+      - .env
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+    volumes:
+      - ./vector_db:/app/vector_db
+      - ./logs:/app/logs
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    sysctls:
+      - net.ipv4.tcp_mtu_probing=1
+    networks:
+      - host_network
+
+  redis:
+    image: docker.1ms.run/redis/redis-stack-server:latest
+    container_name: xiaolang_redis
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - host_network
+    command: redis-stack-server
+
+networks:
+  host_network:
+    driver: bridge
+
+volumes:
+  redis_data:
+    driver: local
